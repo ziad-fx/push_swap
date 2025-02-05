@@ -13,7 +13,7 @@ NAME    = push_swap
 NAME_BONUS    = checker
 CC      = cc
 RM        = rm -f
-CFLAGS    = -Wall -Wextra -Werror -fsanitize=leak
+CFLAGS    = -Wall -Wextra -Werror 
 
 $(NAME) : $(OBJS)
 	cc $(OBJS) ${CFLAGS} -o $(NAME)

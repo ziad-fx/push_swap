@@ -6,7 +6,7 @@
 /*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 17:22:22 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/02/03 22:41:22 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/02/05 14:44:37 by zyahansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,8 +100,8 @@ char	**ft_arg(int ac, char **av)
 	holder = ft_split(ptr, ' ');
 	if (!holder)
 	{
-		ft_write_exit();
 		ft_free_holder(holder);
+		ft_write_exit();
 	}
 	free(ptr);
 	return (holder);

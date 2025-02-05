@@ -6,7 +6,7 @@
 /*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/01 20:51:14 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/02/04 14:02:53 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/02/05 14:47:08 by zyahansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ void	ft_free_holder(char **holder)
 	while (holder[i])
 	{
 		free(holder[i]);
-		*holder = NULL;
+		// *holder = NULL;
 		i++;
 	}
 	free(holder);
-	*holder = NULL;
+	// holder = NULL;
 }
 
 void	ft_free_stack(t_list *stack_a)
